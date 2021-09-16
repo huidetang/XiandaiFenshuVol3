@@ -53,16 +53,12 @@ jobs:
         run: npm install
 
       - name: Execute textlint
-        run: |
-          npx textlint -f checkstyle chapter/*.re wiki/*.md README.md >> .textlint.log
-
-      - name: Run reviewdog
-        # textlintで文章上のミスがあった場合のみ、reviewdogを実行させるようにする
-        if: failure()
         env:
           REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cat .textlint.log | tee | reviewdog -f=checkstyle -name="textlint" -reporter="github-check"
+          npx textlint -f checkstyle chapter/*.re wiki/*.md README.md \
+          | reviewdog -f=checkstyle -name="textlint" -diff="git diff ${{ github.event.pull_request.base.ref }}" -reporter=github-pr-review -level="error"
+
   pdf:
     needs: reviewdog-github-check
     name: Make PDF
