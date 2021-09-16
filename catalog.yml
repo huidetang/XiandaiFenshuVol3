@@ -3,9 +3,9 @@ PREDEF:
 
 CHAPS:
   - 「コンテンツから見る『人間』とは何か」:
-    - 1_1_kemono.re
-    - 2_1_clone.re
-    - 1_3_one.re
+    - kemono.re
+    - clone.re
+    - dempa-otoko.re
   - 『現代焚書』第1号からの再録:
     - c91-homura.re
     - c88-endbreaker.re
