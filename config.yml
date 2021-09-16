@@ -170,7 +170,7 @@ imagedir: images
 # fontdir: fonts
 
 # imagedir内から取り込まれる対象となるファイル拡張子。省略した場合は以下
-image_ext: ["png", "gif", "jpg", "jpeg", "svg", "ttf", "woff", "otf"]
+# image_ext: ["png", "gif", "jpg", "jpeg", "svg", "ttf", "woff", "otf"]
 
 # fontdir内から取り込まれる対象となるファイル拡張子。省略した場合は以下
 # font_ext: ["ttf", "woff", "otf"]
@@ -289,7 +289,8 @@ epubmaker:
   #
   # NCX目次の見出しレベルごとの飾り(配列で設定)。EPUB3ではNCXは作られない
   # ncxindent:
-  #- 
+  #
+  image_ext: ["png", "gif", "jpg", "jpeg", "svg", "ttf", "woff", "otf"]
   #- - 
   # フックは、各段階で介入したいときのプログラムを指定する。自動で適切な引数が渡される
   # プログラムには実行権限が必要
