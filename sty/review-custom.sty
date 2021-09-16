@@ -1,0 +1,190 @@
+% for user-defined macro
+\usepackage{niceframe}
+
+\jlreqsetup{endnote_position={_chapter}}
+
+\renewcommand{\reviewbibref}[2]{\cite{#2}}
+\renewcommand{\reviewtitlefont}[0]{\usefont{T1}{ptm}{m}{n}\gtfamily}
+
+\if@tate
+  \def\recls@tmp{uplatex}\ifx\recls@tmp\recls@engine
+    \RequirePackage{plext}
+  \fi
+  \def\recls@tmp{lualatex}\ifx\recls@tmp\recls@engine
+    \RequirePackage{lltjext}
+  \fi
+  \jlreqsetup{frontmatter_pagebreak={}}% これを入れないと大扉前に白が入る
+\fi
+
+\if@reclscover
+  \ifdefined\review@coverimage
+    \ifrecls@coverfitpage
+       \def\review@coverimageoption{width=\paperwidth,height=\paperheight}
+    \fi
+    \def\reviewcoverpagecont{%
+      \if@tate
+        \expandafter\includefullpagegraphics\expandafter[angle=90,\review@coverimageoption]{\review@coverimage}
+      \else
+        \expandafter\includefullpagegraphics\expandafter[\review@coverimageoption]{\review@coverimage}
+      \fi
+      \cleardoublepage
+    }
+  \fi
+  \ifdefined\review@coverfile
+    \def\reviewcoverpagecont{\review@coverfile}
+  \fi
+\fi
+
+\if@tate
+  \def\@cite#1{\tatechuyoko{[#1]}}
+  \def\@biblabel#1{\tatechuyoko{[#1]}}
+\fi
+
+\patchcmd{\addcontentsline}{\thepage}{\tatechuyoko{\thepage}}{}{}
+
+\makeatletter
+
+% titlepage
+\ifdefined\review@titlepage
+  \ifthenelse{\isundefined{\review@titlefile}}{%
+    \def\reviewtitlepagecont{%
+      \if@tate% 縦書き大扉
+        \begin{titlepage}
+        	\centering
+          
+            \thispagestyle{empty}
+            \begin{minipage}<y>{\textheight}
+              \begin{center}
+                \niceframe{%
+                  \mbox{}%
+                  \vskip5\zw
+                  %\reviewtitlefont%
+                  {\Huge\review@booktitlename\par}%
+                  \ifdefined\review@subtitlename
+                    \vskip 1em%
+                    {\Large\review@subtitlename\par}%
+                  \fi
+                  \vskip 15em%
+                  \begin{center}
+                    {\huge
+                      \lineskip .75em
+                      \begin{center}
+                        \review@titlepageauthors
+                      \end{center}
+                      \par
+                    }%
+                  \end{center}
+                  \vskip 5em%
+                }
+              \end{center}
+            \end{minipage}
+            \hfill
+            \begin{minipage}<y>{\textheight}
+              \begin{center}
+                \reviewtitlefont%
+                {\large\review@date \review@intn@edition%
+                  \hspace{2\zw}%
+                  \review@intn@publishedby\par}%
+                \vskip4\zw\mbox{}
+              \end{center}
+            \end{minipage}
+        \end{titlepage}
+        \clearpage
+      \else% 横書き大扉
+        \begin{titlepage}
+        \thispagestyle{empty}
+        \niceframe{%
+        \begin{center}%
+        \mbox{}%
+        \vskip5\zw
+        \reviewtitlefont%
+        {\Huge\review@booktitlename\par}%
+        \ifdefined\review@subtitlename
+          \vskip 1em%
+          {\Large\review@subtitlename\par}%
+        \fi
+        \vskip 15em%
+        {\huge
+        \lineskip .75em
+        \begin{tabular}[t]{p{\textwidth}}%
+        \centering\review@titlepageauthors
+        \end{tabular}\par}%
+        \vfill
+        {\large\review@date \review@intn@edition%
+          \hspace{2\zw}%
+          \review@intn@publishedby\par}%
+        \vskip4\zw\mbox{}
+        \end{center}%
+        }
+        \end{titlepage}\clearpage
+      \fi
+    }
+  }{%
+    \def\reviewtitlepagecont{\review@titlefile}
+  }
+\fi
+
+% colophon
+\ifdefined\review@colophon
+  \ifthenelse{\isundefined{\review@colophonfile}}{%
+    \def\reviewcolophonpagecont{%
+      \reviewcolophon
+      \if@tate% 縦書き奥付
+        \thispagestyle{empty}
+        \hfill
+        \begin{minipage}<y>{\textheight}
+          {\noindent\Large\review@booktitlename}\\
+          \ifdefined\review@subtitlename
+            {\noindent\large\review@subtitlename} \\
+          \fi
+          \rule[8pt]{\textwidth}{1pt} \\
+          {\noindent\review@pubhistories}
+          \vspace{.5\Cvs}
+
+          \begin{tabularx}{\dimexpr\textwidth-0.5em}{lX}
+            \review@colophonnames
+          \end{tabularx}%
+          　\\
+          \rule[0pt]{\textwidth}{1pt} \\
+          \ifdefined\review@rights
+            \review@rights
+          \fi
+        \end{minipage}
+      \else% 横書き奥付
+        \thispagestyle{empty}
+        \vspace*{\fill}
+        {\noindent\reviewtitlefont\Large\review@booktitlename}\\
+        \ifdefined\review@subtitlename
+          {\noindent\reviewtitlefont\large\review@subtitlename} \\
+        \fi
+        \rule[8pt]{\textwidth}{1pt} \\
+        {\noindent\review@pubhistories}
+
+        \begin{tabularx}{\dimexpr\textwidth-0.5em}{lX}
+          \review@colophonnames
+        \end{tabularx}%
+        　\\
+        \rule[0pt]{\textwidth}{1pt} \\
+        \ifdefined\review@rights
+          \review@rights
+        \fi
+      \fi
+    }%
+  }{%
+    \def\reviewcolophonpagecont{\review@colophonfile}
+  }
+\fi
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+
+\ifx\jlreq@theindex@savedpagestyle\@undefined\else\expandafter\pagestyle\expandafter{\jlreq@theindex@savedpagestyle}\fi
+\let\jlreq@theindex@savedpagestyle\@undefined
+\ifjlreq@resttate\tate\fi
+\jlreq@oldfontcommand@disable
+
+
+\RenewTobiraHeading{part}{-1}{label_format={第\thepart 部\hspace*{1\jlreq@zw}},format={\vspace*{2\jlreq@gol} {\huge#1\hfill\vspace*{2\jlreq@gol}\linebreak\vspace*{2\jlreq@gol}\Large#2}\vspace*{2\jlreq@gol}}}
+
+\makeatother
