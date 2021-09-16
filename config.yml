@@ -447,23 +447,23 @@ pdfmaker:
   #
   boxsetting:
     column:
-      style: marker
+      style: squarebox
     note:
-      style: marker
+      style: squarebox
     memo:
-      style: marker
+      style: squarebox
     tip:
-      style: marker
+      style: squarebox
     info:
-      style: marker
+      style: squarebox
     warning:
-      style: marker
+      style: squarebox
     important:
-      style: marker
+      style: squarebox
     caution:
-      style: marker
+      style: squarebox
     notice:
-      style: marker
+      style: squarebox
   #     style: squarebox
   #     options: "colback=black!5!white"
   #     options_with_caption: "colbacktitle=black!25!white"
