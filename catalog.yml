@@ -2,11 +2,22 @@ PREDEF:
   - preface.re
 
 CHAPS:
-  - test.re
+  - 「コンテンツから見る『人間』とは何か」:
+    - 1_1_kemono.re
+    - 2_1_clone.re
+    - 1_3_one.re
+  - 『現代焚書』第1号からの再録:
+    - c91-homura.re
+    - c88-endbreaker.re
+  - まどかマギカ特集号『Madokaist』の再録:
+    - c91-homura2.re
+    - c91-sayaka.re
+  - 『現代焚書』第2号からの再録:
+    - c92-emoi.re
+    - c92-mohican.re
 
 APPENDIX:
 
 POSTDEF:
   - postscript.re
   - bib.re
-
