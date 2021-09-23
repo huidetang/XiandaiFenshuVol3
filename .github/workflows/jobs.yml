@@ -79,8 +79,8 @@ jobs:
       - name: Upload artifact.
         uses: actions/upload-artifact@v2
         with:
-          name: book.pdf
-          path: book.pdf
+          name: XiandaiFenshuVol3.pdf
+          path: XiandaiFenshuVol3.pdf
   epub:
     needs: reviewdog-github-check
     name: Make EPUB
@@ -97,5 +97,5 @@ jobs:
       - name: Upload artifact.
         uses: actions/upload-artifact@v2
         with:
-          name: book.epub
-          path: book.epub
+          name: XiandaiFenshuVol3.epub
+          path: XiandaiFenshuVol3.epub
