@@ -483,8 +483,8 @@
 
 この、煉獄についての考え方がローマ・カトリックの重要な点であると思います。
 
-//footnote[catholic2][@<bib>{catechism} p.124より]
-//footnote[catholic3][@<bib>{catechism} p.125より]
+//footnote[catholic2][@<bib>{catechism} １２４ページより]
+//footnote[catholic3][@<bib>{catechism} １２５ページより]
 //footnote[catholic4][訳文はフェデリコ・バルバロの訳による。]
 
 == プロテスタントの救済思想
