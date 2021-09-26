@@ -70,6 +70,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install gems.
         run: bundle install
+      - name: Convert SVG to PDF
+        run: pwd | python3 svg.py >> .svg.log
+      - name: Show .svg.log
+        run: cat .svg.log
       - name: Rotate images.
         run: pwd | python3 rotate.py >> .rotate.log
       - name: Show .rotate.log
