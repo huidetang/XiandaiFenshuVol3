@@ -8,7 +8,8 @@ from reportlab.graphics import renderPDF
 
 
 def rotate(path):
-    svg = svgutils.transform.fromfile(path)
+    svg_text = open(path, 'r', encoding='UTF-8')
+    svg = svgutils.transform.fromstring(svg_text.encode('utf-8'))
     svg.rotate(-90)
     figure = svgutils.compose.Figure(svg.height, svg.width, svg)
     figure.save(path)
@@ -19,7 +20,7 @@ def convert_pdf(path):
     filename = path
     filename_without_ext = splitext(basename(path))[0]
     drawing = svg2rlg(filename)
-    renderPDF.drawToFile(drawing, filename_without_ext + ".pdf")
+    renderPDF.drawToFile(drawing, filename_without_ext + '.pdf')
     return
 
 
@@ -35,6 +36,6 @@ def convert(dir):
     return
 
 
-image_path = getcwd() + "/images"
+image_path = getcwd() + '/images'
 print(image_path)
 convert(image_path)
