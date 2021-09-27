@@ -1,6 +1,6 @@
 import glob
 from os import getcwd
-from os.path import basename, join, splitext
+from os.path import basename, join
 
 import cairosvg
 import PyPDF2
@@ -32,6 +32,10 @@ def convert(dir):
     return
 
 
-image_path = getcwd() + '/images'
-print(image_path + 'のファイルが対象です。')
-convert(image_path)
+def main():
+    image_path = getcwd() + '/images'
+    print(image_path + 'のファイルが対象です。')
+    convert(image_path)
+
+if __name__ == "__main__":
+    main()

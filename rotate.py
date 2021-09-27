@@ -4,10 +4,12 @@ from os.path import join
 
 from PIL import Image
 
+
 def rotate(path):
     image = Image.open(path)
     rotated_image = image.rotate(90, expand=True)
     return rotated_image
+
 
 def bundle_rotate(dir):
     path_list = []
@@ -21,6 +23,12 @@ def bundle_rotate(dir):
         print(i)
     return
 
-image_path = getcwd() + "/images"
-print(image_path)
-bundle_rotate(image_path)
+
+def main():
+    image_path = getcwd() + "/images"
+    print(image_path)
+    bundle_rotate(image_path)
+
+
+if __name__ == "__main__":
+    main()
