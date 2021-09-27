@@ -71,7 +71,7 @@ jobs:
       - name: Install gems.
         run: bundle install
       - name: Copy plantuml.
-        run: pwd | cp /java/plantuml.jar
+        run: cp /java/plantuml.jar .
       - name: Check tools
         run: dot -V && blockdiag --version && java -jar plantuml.jar -version
       - name: convert PlantUML
@@ -105,7 +105,7 @@ jobs:
       - name: Install gems.
         run: bundle install
       - name: Copy plantuml.
-        run: pwd | cp /java/plantuml.jar
+        run: cp /java/plantuml.jar .
       - name: Check tools
         run: dot -V && blockdiag --version && java -jar plantuml.jar -version
       - name: convert PlantUML
