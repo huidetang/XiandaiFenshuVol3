@@ -1,30 +1,20 @@
-import codecs
 import glob
 from os import getcwd
 from os.path import basename, join, splitext
 
-import svgutils
-from svglib.svglib import svg2rlg
-from reportlab.graphics import renderPDF
+import cairosvg
+import PyPDF2
 
 
-def rotate(path):
-    with codecs.open(path, 'r', 'utf-8', 'ignore') as f:
-        svg_text = f.read()
-    print(svg_text)
-    svg = svgutils.transform.fromstring(svg_text)
-    svg.rotate(-90)
-    figure = svgutils.compose.Figure(svg.height, svg.width, svg)
-    figure.save(path)
-    return
-
-
-def convert_pdf(path):
-    filename = path
-    filename_without_ext = splitext(basename(path))[0]
-    drawing = svg2rlg(filename)
-    renderPDF.drawToFile(drawing, filename_without_ext + '.pdf')
-    return
+def rotate(file_path, angle):
+    file = PyPDF2.PdfFileReader(open(file_path, 'rb'))
+    file_output = PyPDF2.PdfFileWriter()
+    for page_num in range(file.numPages):
+        page = file.getPage(page_num)
+        page.rotateClockwise(angle)
+        file_output.addPage(page)
+    with open(file_path, 'wb') as f:
+        file_output.write(f)
 
 
 def convert(dir):
@@ -32,13 +22,16 @@ def convert(dir):
     for ext in ('*.svg'):
         path_list.extend(glob.glob(join(dir, ext)))
 
-    for i in path_list:
-        print(i)
-        rotate(i)
-        convert(i)
+    for file in path_list:
+        print(file + 'を変換します。')
+        converted_file_name = splitext(basename(file)) + '.pdf'
+        cairosvg.svg2pdf(url=file, write_to=converted_file_name)
+        print(converted_file_name + 'を出力しました。')
+        rotate(converted_file_name, 270)
+        print(converted_file_name + 'を回転しました。')
     return
 
 
 image_path = getcwd() + '/images'
-print(image_path)
+print(image_path + 'のファイルが対象です。')
 convert(image_path)
