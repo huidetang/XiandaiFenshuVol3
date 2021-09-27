@@ -73,7 +73,7 @@ jobs:
       - name: add Path.
         run: echo "/java" >> $GITHUB_PATH
       - name: Check tools
-        run: dot -V && blockdiag --version && java -jar plantuml.jar -version
+        run: dot -V && blockdiag --version && java -jar /java/plantuml.jar -version
       - name: convert PlantUML
         run: pwd | bash ./plantuml.sh >> .plantuml.log
       - name: Show .plantuml.log
@@ -107,7 +107,7 @@ jobs:
       - name: add Path.
         run: echo "/java" >> $GITHUB_PATH
       - name: Check tools
-        run: dot -V && blockdiag --version && java -jar plantuml.jar -version
+        run: dot -V && blockdiag --version && java -jar /java/plantuml.jar -version
       - name: convert PlantUML
         run: pwd | bash ./plantuml.sh >> .plantuml.log
       - name: Show .plantuml.log
