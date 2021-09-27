@@ -19,16 +19,18 @@ def rotate(file_path, angle):
 
 def convert(dir):
     path_list = []
-    for ext in ('*.svg'):
-        path_list.extend(glob.glob(join(dir, ext)))
+
+    path_file = join(dir, "*.svg")
+    filename = glob.glob(path_file)
+    path_list.extend(filename)
 
     for file in path_list:
-        print(file + 'を変換します。')
-        converted_file_name = (basename(file).split('.', 1)[0]) + '.pdf'
+        converted_file_name = join(dir, (basename(file).split('.', 1)[0] + ".pdf"))
+        print(file + "を" + converted_file_name + "に変換します。")
         cairosvg.svg2pdf(url=file, write_to=converted_file_name)
-        print(converted_file_name + 'を出力しました。')
+        print(converted_file_name + "を出力しました。")
         rotate(converted_file_name, 270)
-        print(converted_file_name + 'を回転しました。')
+        print(converted_file_name + "を回転しました。")
     return
 
 
@@ -36,6 +38,7 @@ def main():
     image_path = getcwd() + '/images'
     print(image_path + 'のファイルが対象です。')
     convert(image_path)
+
 
 if __name__ == "__main__":
     main()
