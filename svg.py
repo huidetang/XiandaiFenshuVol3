@@ -1,3 +1,4 @@
+import codecs
 import glob
 from os import getcwd
 from os.path import basename, join, splitext
@@ -8,7 +9,7 @@ from reportlab.graphics import renderPDF
 
 
 def rotate(path):
-    with open(path, 'r', encoding='utf-8') as f:
+    with codecs.open(path, 'r', 'utf-8', 'ignore') as f:
         svg_text = f.read()
     svg = svgutils.transform.fromstring(svg_text.encode('utf-8'))
     svg.rotate(-90)
