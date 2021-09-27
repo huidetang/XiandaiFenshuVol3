@@ -16,6 +16,8 @@ echo "\n${image_dir}の中身を表示します。"
 ls $image_dir
 
 svgs=`find $image_dir -maxdepth 0 -type f -name *.svg`
+echo "\n${image_dir}の中のSVGファイルを表示します。"
+echo $svgs
 for svg in $svgs;
 do
     echo "\n${svg}の内容は以下の通りです。"
