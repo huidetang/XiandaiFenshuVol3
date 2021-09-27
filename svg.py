@@ -11,7 +11,7 @@ from reportlab.graphics import renderPDF
 def rotate(path):
     with codecs.open(path, 'r', 'utf-8', 'ignore') as f:
         svg_text = f.read()
-    svg = svgutils.transform.fromstring(svg_text.encode('utf-8'))
+    svg = svgutils.transform.fromstring(svg_text)
     svg.rotate(-90)
     figure = svgutils.compose.Figure(svg.height, svg.width, svg)
     figure.save(path)
