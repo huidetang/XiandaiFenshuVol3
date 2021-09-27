@@ -70,8 +70,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install gems.
         run: bundle install
-      - name: Download PlantUML
-        run: curl -sL https://sourceforge.net/projects/plantuml/files/plantuml.jar
+      - name: add Path.
+        run: echo "/java" >> $GITHUB_PATH
+      - name: Check tools
+        run: dot -V && blockdiag --version && java -jar plantuml.jar -version
       - name: convert PlantUML
         run: pwd | bash ./plantuml.sh >> .plantuml.log
       - name: Show .plantuml.log
@@ -102,8 +104,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install gems.
         run: bundle install
-      - name: Download PlantUML
-        run: curl -sL https://sourceforge.net/projects/plantuml/files/plantuml.jar
+      - name: add Path.
+        run: echo "/java" >> $GITHUB_PATH
       - name: Check tools
         run: dot -V && blockdiag --version && java -jar plantuml.jar -version
       - name: convert PlantUML
