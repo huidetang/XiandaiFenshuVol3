@@ -9,5 +9,5 @@ files=`find $pu_dir -maxdepth 0 -type f -name *.pu`
 for file in $files;
 do
     echo $file
-    java -jar plantuml.jar -o $image_dir -tsvg $file
+    java -jar /java/plantuml.jar -o $image_dir -tsvg $file
 done
