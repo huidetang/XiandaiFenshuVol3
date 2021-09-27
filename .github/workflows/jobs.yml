@@ -70,6 +70,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install gems.
         run: bundle install
+      - name: convert PlantUML
+        run: pwd | bash ./plantuml.sh >> .plantuml.log
+      - name: Show .plantuml.log
+        run: cat .plantuml.log
       - name: Convert SVG to PDF
         run: pwd | python3 svg.py >> .svg.log
       - name: Show .svg.log
@@ -96,6 +100,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install gems.
         run: bundle install
+      - name: convert PlantUML
+        run: pwd | bash ./plantuml.sh >> .plantuml.log
+      - name: Show .plantuml.log
+        run: cat .plantuml.log
       - name: Build EPUB.
         run: bundle exec rake clean epub
       - name: Upload artifact.
