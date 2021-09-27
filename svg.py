@@ -24,7 +24,7 @@ def convert(dir):
 
     for file in path_list:
         print(file + 'を変換します。')
-        converted_file_name = splitext(basename(file)) + '.pdf'
+        converted_file_name = (basename(file).split('.', 1)[0]) + '.pdf'
         cairosvg.svg2pdf(url=file, write_to=converted_file_name)
         print(converted_file_name + 'を出力しました。')
         rotate(converted_file_name, 270)
