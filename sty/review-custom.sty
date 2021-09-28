@@ -1,11 +1,17 @@
 % for user-defined macro
 \usepackage{niceframe}
 
+% 後注の出力場所に関する設定
+% Re:VIEW 5.3が来たら取り除く
 \jlreqsetup{endnote_position={_chapter}}
 
+% ここの意味は要調査
 \renewcommand{\reviewbibref}[2]{\cite{#2}}
+
+% 大扉は明朝に
 \renewcommand{\reviewtitlefont}[0]{\usefont{T1}{ptm}{m}{n}\gtfamily}
 
+% 大扉関連と思われる
 \if@tate
   \def\recls@tmp{uplatex}\ifx\recls@tmp\recls@engine
     \RequirePackage{plext}
@@ -16,6 +22,7 @@
   \jlreqsetup{frontmatter_pagebreak={}}% これを入れないと大扉前に白が入る
 \fi
 
+% 表紙90°回転？
 \if@reclscover
   \ifdefined\review@coverimage
     \ifrecls@coverfitpage
@@ -35,6 +42,7 @@
   \fi
 \fi
 
+% 各部のページは縦書きのまま
 \if@tate
   \def\@cite#1{\tatechuyoko{[#1]}}
   \def\@biblabel#1{\tatechuyoko{[#1]}}
@@ -44,11 +52,11 @@
 
 \makeatletter
 
-% titlepage
+% 大扉
 \ifdefined\review@titlepage
   \ifthenelse{\isundefined{\review@titlefile}}{%
     \def\reviewtitlepagecont{%
-      \if@tate% 縦書き大扉
+      \if@tate% 縦書き大扉は枠付きに
         \begin{titlepage}
         	\centering
           
@@ -124,7 +132,7 @@
   }
 \fi
 
-% colophon
+% 奥付
 \ifdefined\review@colophon
   \ifthenelse{\isundefined{\review@colophonfile}}{%
     \def\reviewcolophonpagecont{%
@@ -184,7 +192,7 @@
 \ifjlreq@resttate\tate\fi
 \jlreq@oldfontcommand@disable
 
-
+% 各章の扉
 \RenewTobiraHeading{part}{-1}{label_format={第\thepart 部\hspace*{1\jlreq@zw}},format={\vspace*{2\jlreq@gol} {\huge#1\hfill\vspace*{2\jlreq@gol}\linebreak\vspace*{2\jlreq@gol}\Large#2}\vspace*{2\jlreq@gol}}}
 
 \makeatother
