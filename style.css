@@ -501,3 +501,14 @@ span.tcy {
   -ms-text-combine-horizontal: all;
   text-combine-upright: all;
 }
+
+div.yoko {
+  -webkit-writing-mode: horizontal-tb;
+  -epub-writing-mode:   horizontal-tb;
+  writing-mode: lr-tb;
+  width: 20em;
+}
+
+p.migi {
+  text-align: right;
+}

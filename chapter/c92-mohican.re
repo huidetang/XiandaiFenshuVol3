@@ -17,22 +17,22 @@
 中には、自分の詰めが甘いところを認めながら、「マサカリ投げてください」とか
 「マサカリチャンス」とか自分から言う人もいたりします。
 
-また、とある技術系コミュニティの勉強会@<fn>{dogenzakaLT}において、
+また、とある技術系コミュニティの勉強会@<endnote>{dogenzakaLT}において、
 「マサカリはここに置いてきてください」という掲示と共に、マサカリが置かれていた、ということもあったそうです。
 
-//footnote[dogenzakaLT][詳しくはねとらぼの該当記事（@<href>{http://nlab.itmedia.co.jp/nl/articles/1501/15/news170.html}、２０１５年１月@<tcy>{15}日付け）参照。]
+//endnote[dogenzakaLT][詳しくはねとらぼの該当記事（@<href>{http://nlab.itmedia.co.jp/nl/articles/1501/15/news170.html}、２０１５年１月@<tcy>{15}日付け）参照。]
 
 == 「マサカリ」の語源と「モヒカン族」
 
 この「マサカリ」ですが、一説では「モヒカン族」の武器として
-たとえられていたのが起源@<fn>{masakari_roots}とされています。
+たとえられていたのが起源@<endnote>{masakari_roots}とされています。
 
-//footnote[masakari_roots][詳しくはkaityo256氏の、Qiitaの『マサカリの起源について』（@<href>{http://qiita.com/kaityo256/items/d7d8f7a0e522895c8f5d}）参照。]
+//endnote[masakari_roots][詳しくはkaityo256氏の、Qiitaの『マサカリの起源について』（@<href>{http://qiita.com/kaityo256/items/d7d8f7a0e522895c8f5d}）参照。]
 
-ただ、実際にはTAKANO Mitsuhiro氏のツイート@<fn>{masakari_tweet}によると、Perlコミュニティなどで使われていたようです。
+ただ、実際にはTAKANO Mitsuhiro氏のツイート@<endnote>{masakari_tweet}によると、Perlコミュニティなどで使われていたようです。
 もしかすると野球のマサカリ投法から連想されたのかもしれません。
 
-//footnote[masakari_tweet][@<href>{https://twitter.com/takano32/status/844532348733480960}]
+//endnote[masakari_tweet][@<href>{https://twitter.com/takano32/status/844532348733480960}]
 
 先ほどのkaityo256氏の調査によると、2012年頃には「マサカリ」という表現が定着しています。
 
@@ -43,10 +43,10 @@
 ずばっとした指摘を出してくる人たちのことです。
 
 モヒカン族のようなコミュニケーションは理系的に見えますが、実は文系でも
-間違えた時代認識に基づいて書かれた地図の誤りを指摘する人たち@<fn>{fake_map}のように
+間違えた時代認識に基づいて書かれた地図の誤りを指摘する人たち@<endnote>{fake_map}のように
 似たようなことが起こっていたりします。
 
-//footnote[fake_map][Togetterのまとめ（@<href>{https://togetter.com/li/439183}）参照のこと。]
+//endnote[fake_map][Togetterのまとめ（@<href>{https://togetter.com/li/439183}）参照のこと。]
 
 また、その「モヒカン族」に対する考察をする人たちもおり、
 以下のような「宣言」というものが挙げられていたりします。
@@ -145,10 +145,10 @@
 コミケ会場でも、実際様々な国からの観光客がいます。
 ある人はアメリカからだったり、またある人は中国からだったり。
 コミュニケーションに苦しむ人はそれだけではありません。
-最近は、発達障がいが話題になっていますが、発達障がい当事者@<fn>{mohican_autism}は場の空気を感じ取ることが苦手だったりします。
+最近は、発達障がいが話題になっていますが、発達障がい当事者@<endnote>{mohican_autism}は場の空気を感じ取ることが苦手だったりします。
 そんな発達障がい当事者にとっても、「ムラビト」社会は生活しづらいと思うところがあるのだと思います。
 
-//footnote[mohican_autism][私自身が発達障がい当事者です。]
+//endnote[mohican_autism][私自身が発達障がい当事者です。]
 
 == 「マイノリティ」と区別すること自体が間違えである
 
@@ -272,3 +272,5 @@
 ただ投げるだけ、受けるだけではなく、どうしたら相手の発言を尊重し理解できるか、
 どうしたら相手を傷つけずにその相手に意見を理解してもらえるか、
 考えながら多様性を高めるのが、私はベストな道だと考えています。
+
+//printendnotes

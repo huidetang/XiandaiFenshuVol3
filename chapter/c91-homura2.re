@@ -94,16 +94,33 @@
 
 また、ラストシーンにはこのような英文が掲載されています。
 
-//quote{
-Don't forget.@<br>{}
-Always,somewhere,@<br>{}
-someone is fighting@<br>{}
-for you.@<br>{}
-As long as you@<br>{}
-remember her,@<br>{}
-you're not alone.@<br>{}
+//embed[html]{
+<div class="yoko">
+  <p>
+    Don't forget.<br />
+    Always,somewhere,<br />
+    someone is fighting<br />
+    for you.<br />
+    As long as you<br />
+    remember her,<br />
+    you're not alone.
+  </p>
+  <p class="migi">「魔法少女まどか☆マギカ」12話より</p>
+</div>
+//}
 
-「魔法少女まどか☆マギカ」@<tcy>{12}話より
+//embed[latex]{
+\pbox<y>[15zw][c]{
+Don't forget.\\
+Always,somewhere,\\
+someone is fighting\\
+for you.\\
+As long as you\\
+remember her,\\
+you're not alone.\\
+
+\rightline{「魔法少女まどか☆マギカ」12話より}
+}
 //}
 
 まさに、時間も場所も超越した存在として@<idx>{アルティメットまどか}は描かれています。
@@ -128,20 +145,20 @@ you're not alone.@<br>{}
 この、「天の王」という祈祷文には、「在らざる所なき者」にして、「満たざる所なき者」という文言が出てきます。
 ここで想起されるのは、「@<idx>{ユビキタス}」という単語です。
 IT系では一時期この言葉がバズワードになりましたが、本来は、「神は偏在する」という意味の言葉です。
-@<idx>{正教}や@<idx>{カトリック}、@<idx>{プロテスタント}などの主流派キリスト教では、４５１年の第四全地公会@<fn>{trinity1}以降、神は３つの位格を持つと考えられてきました。
+@<idx>{正教}や@<idx>{カトリック}、@<idx>{プロテスタント}などの主流派キリスト教では、４５１年の第四全地公会@<endnote>{trinity1}以降、神は３つの位格を持つと考えられてきました。
 
-//footnote[trinity1][一般的には「カルケドン公会議」と言われます。]
+//endnote[trinity1][一般的には「カルケドン公会議」と言われます。]
 
-この、「@<idx>{至聖三者}」@<fn>{trinity2}は、おおむね以下のように理解されています。
+この、「@<idx>{至聖三者}」@<endnote>{trinity2}は、おおむね以下のように理解されています。
 
-//footnote[trinity2][いわゆる「三位一体」のこと。]
+//endnote[trinity2][いわゆる「三位一体」のこと。]
 
   * 父なる神
-  * 子なるイイスス・ハリストス@<fn>{trinity3}
-  * 聖神@<fn>{trinity4}
+  * 子なるイイスス・ハリストス@<endnote>{trinity3}
+  * 聖神@<endnote>{trinity4}
 
-//footnote[trinity3][イエス・キリストのこと。]
-//footnote[trinity4][西方教会では「聖霊」と言われる。]
+//endnote[trinity3][イエス・キリストのこと。]
+//endnote[trinity4][西方教会では「聖霊」と言われる。]
 
 この3つが1つであり、1つが3つであることなのです。
 これは理解を超えているものであり、信じること、とされています。
@@ -161,7 +178,7 @@ IT系では一時期この言葉がバズワードになりましたが、本来
 また、@<idx>{ダマスコのイオアン}が
 
 //quote{
-天使が悔い改めがたいのは体がないからで、人は体の弱さがあるから悔い改められる。@<fn>{kuiaratame1}
+天使が悔い改めがたいのは体がないからで、人は体の弱さがあるから悔い改められる。@<endnote>{kuiaratame1}
 //}
 
 とまとめていますが、堕天した天使のなれの果てと考えられる悪魔は肉体がないがゆえに悔い改めがたくなるわけです。
@@ -190,7 +207,7 @@ IT系では一時期この言葉がバズワードになりましたが、本来
 そうなると、魔法少女たちがキュゥべえの「誘惑」に乗ってしまったのも、魔法少女自身が持ちうる「自由意志」によって、「悪魔」の誘惑に負けてしまったのだと思います。
 我々の心の中には、もしかすると、「悪魔」を抱えているのかもしれないと思います。
 
-//footnote[kuiaratame1][出典は@<bib>{kami-to-akuma}による。]
+//endnote[kuiaratame1][出典は@<bib>{kami-to-akuma}による。]
 
 == ほむらは救われようと思っているのか
 
@@ -224,3 +241,5 @@ IT系では一時期この言葉がバズワードになりましたが、本来
 だから、@<idx>{自殺}という「絶望」は選びたくないと思っています。
 また、こんなにも面白い世界にいられるということにも感謝しています。
 確かに、私は「バカ」かもしれないけど、それに悲観せずに前向きに生きていこうと思います。
+
+//printendnotes
