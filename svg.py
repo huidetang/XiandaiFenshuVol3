@@ -18,7 +18,7 @@ def rotate(file_path, angle):
         print(file_path + "の書き込み準備完了")
     with open(file_path, "wb") as f:
         file_output.write(f)
-        print(f + "の書き込み完了！")
+        print(file_path + "の書き込み完了！")
 
 
 def convert(dir):
