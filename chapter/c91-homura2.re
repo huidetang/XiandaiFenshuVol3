@@ -111,7 +111,15 @@
 
 //embed[latex]{
 \parbox<y>{20zw}{%
-\centerline{Don't forget.\\Always,somewhere,\\someone is fighting\\for you.\\As long as you\\remember her,\\you're not alone.}
+\centerline{%
+Don't forget.\\
+Always,somewhere,\\
+someone is fighting\\
+for you.\\
+As long as you\\
+remember her,\\
+you're not alone.
+}
 
 \rightline{「魔法少女まどか☆マギカ」12話より}
 }
