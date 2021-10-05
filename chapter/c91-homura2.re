@@ -111,7 +111,7 @@
 
 //embed[latex]{
 \vspace{2zw}
-\fbox{\begin{minipage}<y>[c]{20zw}
+\fbox{\hspace{2zw}\begin{minipage}<y>[c]{20zw}
 
 \center{
 Don't forget.\\
@@ -122,7 +122,7 @@ As long as you\\
 remember her,\\
 you're not alone.
 
-\vspace{2zw}
+\vspace{1zw}
 }
 \rightline{「魔法少女まどか☆マギカ」12話より}
 \end{minipage}}%
