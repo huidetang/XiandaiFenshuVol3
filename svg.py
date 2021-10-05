@@ -8,13 +8,17 @@ import PyPDF2
 
 def rotate(file_path, angle):
     file = PyPDF2.PdfFileReader(open(file_path, 'rb'))
+    print(file_path + "を回転します。")
     file_output = PyPDF2.PdfFileWriter()
     for page_num in range(file.numPages):
         page = file.getPage(page_num)
         page.rotateClockwise(angle)
+        print("回転！！")
         file_output.addPage(page)
-    with open(file_path, 'wb') as f:
+        print(file_path + "の書き込み準備完了")
+    with open(file_path, "wb") as f:
         file_output.write(f)
+        print(f + "の書き込み完了！")
 
 
 def convert(dir):
