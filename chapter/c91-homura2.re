@@ -121,8 +121,8 @@ for you.\\
 As long as you\\
 remember her,\\
 you're not alone.
-}
 \vspace{2zw}
+}
 \rightline{「魔法少女まどか☆マギカ」12話より}
 \end{minipage}}%
 \vspace{2zw}
