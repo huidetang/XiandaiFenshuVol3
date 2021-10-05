@@ -507,6 +507,9 @@ div.yoko {
   -epub-writing-mode:   horizontal-tb;
   writing-mode: lr-tb;
   width: 30em;
+  margin: 0;
+  padding: 5px;
+  border: 1px #aaa solid;
 }
 
 div.yoko p.center {
