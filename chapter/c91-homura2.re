@@ -96,7 +96,7 @@
 
 //embed[html]{
 <div class="yoko">
-  <p>
+  <p class="center">
     Don't forget.<br />
     Always,somewhere,<br />
     someone is fighting<br />
@@ -110,7 +110,8 @@
 //}
 
 //embed[latex]{
-\fbox{\begin{minipage}<y>{25zw}
+\vspace{1zw}
+\fbox{\begin{minipage}<y>[c]{20zw}
 
 Don't forget.\\
 Always,somewhere,\\
@@ -122,6 +123,7 @@ you're not alone.
 
 \rightline{「魔法少女まどか☆マギカ」12話より}
 \end{minipage}}%
+\vspace{1zw}
 //}
 
 まさに、時間も場所も超越した存在として@<idx>{アルティメットまどか}は描かれています。

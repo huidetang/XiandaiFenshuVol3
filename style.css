@@ -506,10 +506,13 @@ div.yoko {
   -webkit-writing-mode: horizontal-tb;
   -epub-writing-mode:   horizontal-tb;
   writing-mode: lr-tb;
-  text-align: center;
   width: 30em;
 }
 
-p.migi {
+div.yoko p.center {
+  text-align: center;
+}
+
+div.yoko p.migi {
   text-align: right;
 }
