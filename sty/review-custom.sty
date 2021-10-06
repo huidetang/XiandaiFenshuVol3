@@ -1,7 +1,7 @@
 % for user-defined macro
 \usepackage{niceframe}
 \usepackage{plext}
-\usepackage{pdfpages}
+%\usepackage{pdfpages}
 \usepackage[dvipdfmx]{graphicx}
 
 % 後注の出力場所に関する設定
@@ -199,7 +199,7 @@
 \RenewTobiraHeading{part}{-1}{label_format={第\thepart 部\hspace*{1\jlreq@zw}},format={\vspace*{2\jlreq@gol} {\huge#1\hfill\vspace*{2\jlreq@gol}\linebreak\vspace*{2\jlreq@gol}\Large#2}\vspace*{2\jlreq@gol}}}
 
 % 画像回転
-%\DeclareRobustCommand{\reviewincludegraphics}[2][]{%
-%  \includegraphics[#1,angle=90]{#2}}
+\DeclareRobustCommand{\reviewincludegraphics}[2][]{%
+  \includegraphics[#1,angle=90]{#2}}
 
 \makeatother
