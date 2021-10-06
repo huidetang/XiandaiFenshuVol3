@@ -218,7 +218,7 @@
 
 //endnote[batthyany][ここではハンガリー人の伝統的姓名表記法に従い姓・名の順で表記しています]
 
-//image[sunday_silence][サンデーサイレンス][scale=0.75]{
+//image[sunday_silence][サンデーサイレンス]{
 サンデーサイレンス
 //}
 
