@@ -448,23 +448,23 @@ pdfmaker:
   #
   boxsetting:
     column:
-      style: squaresepcaptionbox
+      style: leftsidelinebox
     note:
-      style: squaresepcaptionbox
+      style: leftsidelinebox
     memo:
-      style: squaresepcaptionbox
+      style: leftsidelinebox
     tip:
-      style: squaresepcaptionbox
+      style: leftsidelinebox
     info:
-      style: squaresepcaptionbox
+      style: leftsidelinebox
     warning:
-      style: squaresepcaptionbox
+      style: leftsidelinebox
     important:
-      style: squaresepcaptionbox
+      style: leftsidelinebox
     caution:
-      style: squaresepcaptionbox
+      style: leftsidelinebox
     notice:
-      style: squaresepcaptionbox
+      style: leftsidelinebox
   #     style: squarebox
   #     options: "colback=black!5!white"
   #     options_with_caption: "colbacktitle=black!25!white"
