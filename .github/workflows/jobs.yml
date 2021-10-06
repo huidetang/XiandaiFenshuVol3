@@ -82,10 +82,10 @@ jobs:
         run: pwd | python3 svg.py >> .svg.log
       - name: Show .svg.log
         run: cat .svg.log
-      - name: Rotate images.
-        run: pwd | python3 rotate.py >> .rotate.log
-      - name: Show .rotate.log
-        run: cat .rotate.log
+      # - name: Rotate images.
+      #   run: pwd | python3 rotate.py >> .rotate.log
+      # - name: Show .rotate.log
+      #   run: cat .rotate.log
       - name: Build PDF.
         run: bundle exec rake clean pdf
       - name: Upload artifact.

@@ -56,7 +56,7 @@
 
 ところで、映画化の3作品目である『魔法少女まどか☆マギカ　叛逆の物語』において、ある意味「神に背く」存在となったほむらですが、彼女の救済に関しては様々な意見があると言えます。
 
-//image[homura1][悪魔ほむら分類図]{
+//graph[homura1][plantuml][悪魔ほむら分類図]{
 @startmindmap
 skinparam monochrome true
 skinparam defaultFontName "Noto Sans CJK JP"

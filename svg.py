@@ -33,8 +33,8 @@ def convert(dir):
         print(file + "を" + converted_file_name + "に変換します。")
         cairosvg.svg2pdf(url=file, write_to=converted_file_name)
         print(converted_file_name + "を出力しました。")
-        rotate(converted_file_name, 270)
-        print(converted_file_name + "を回転しました。")
+        # rotate(converted_file_name, 270)
+        # print(converted_file_name + "を回転しました。")
     return
 
 
