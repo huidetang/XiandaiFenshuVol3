@@ -202,10 +202,11 @@
 \DeclareRobustCommand{\reviewincludegraphics}[2][]{%
   \includegraphics[#1,angle=90]{#2}}
 
-\makeatother
-
 % コラムの枠囲い
 \usepackage{ascmac}
 \renewenvironment{reviewcolumn}[1][コラム]{%
   \begin{itembox}[l]{\sffamily\bfseries #1}}
  {\end{itembox}}
+
+\makeatother
+
