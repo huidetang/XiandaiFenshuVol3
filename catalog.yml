@@ -1,5 +1,6 @@
 PREDEF:
   - preface.re
+  - preface4.re
 
 CHAPS:
   - 「コンテンツから見る『人間』とは何か」:
@@ -20,4 +21,5 @@ APPENDIX:
 
 POSTDEF:
   - postscript.re
+  - postscript4.re
   - bib.re

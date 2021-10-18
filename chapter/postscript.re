@@ -1,4 +1,4 @@
-= あとがき
+= 現代焚書 第３号 あとがき
 
 //flushright{
 @<b>{著者：ヨーシャ <iosha@huideyeren.info>}

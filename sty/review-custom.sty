@@ -8,7 +8,10 @@
 % Re:VIEW 5.3が来たら取り除く
 \jlreqsetup{endnote_position={_chapter}}
 
-% ここの意味は要調査
+% 数字を使う箇条書きのみ数字と本文の間を1文字開ける
+\jlreqsetup{itemization_labelsep={enumerate=1zw}}
+
+% 参考文献の書式
 \renewcommand{\reviewbibref}[2]{\cite{#2}}
 
 % 大扉は明朝に

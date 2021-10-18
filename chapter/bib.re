@@ -142,6 +142,45 @@
   祈祷文「天主経」（聖ニコライ・中井木菟麻呂訳の原文による）
 //}
 
+//bibpaper[statement-by-the-white-house][相模原障がい者連続殺傷事件に対するホワイトハウスの声明]{
+  Statement by NSC Spokesperson Ned Price on the Knife Attack in Japan@<br>{}
+  @<href>{https://bit.ly/2adaFRP}
+//}
+
+//bibpaper[tokurei-kogaisha][特例子会社制度の概要]{
+  厚生労働省のドキュメント『「特例子会社」制度の概要』@<br>{}
+  @<href>{https://www.mhlw.go.jp/bunya/koyou/shougaisha/dl/07.pdf}
+//}
+
+//bibpaper[soushokukei-insei][草食性院生のブログ]{
+  windupbird氏のブログ「草食系院生ブログ」@<br>{}
+  @<href>{http://dameinsei.hatenadiary.jp/}
+//}
+
+//bibpaper[sagamihara][相模原障害者殺傷事件]{
+  立岩真也、杉田俊介・著『相模原障害者殺傷事件 優生思想とヘイトクライム』東京・青土社、2017年
+//}
+
+//bibpaper[saigo][わたしで最後にして]{
+  藤井克徳・著『わたしで最後にして ナチスの障害者虐殺と優生思想』東京・合同出版、2018年
+//}
+
+//bibpaper[deutsche-ideologie][ドイツ・イデオロギー]{
+  K.H.マルクス、E.エンゲルス・著 広松渉・編訳 小林昌人・補訳『新編輯版 ドイツ・イデオロギー』東京・岩波書店、出版年月	2002年
+//}
+
+//bibpaper[keizaigaku-hihan][経済学批判]{
+  K.H.マルクス、E.エンゲルス・著 大内兵衛ほか・訳『マルクス・エンゲルス選集 7 経済学批判』東京・新潮社、1972年
+//}
+
+//bibpaper[purokei][プロテスタンティズムの倫理と資本主義の精神]{
+  マックス・ヴェーバー・著 大塚久雄・訳『プロテスタンティズムの倫理と資本主義の精神』東京・岩波書店、1989年
+//}
+
+//bibpaper[keynes][ケインズ説得論集]{
+  J.M.ケインズ・著 山岡洋一・訳『ケインズ説得論集』東京・日本経済新聞出版社、2010年
+//}
+
 //embed[latex]{
 \end{thebibliography}
 //}
