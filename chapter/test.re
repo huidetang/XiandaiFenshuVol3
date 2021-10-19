@@ -2,3 +2,4 @@
 
 テンプレートのテスト。
 
+//printendnotes

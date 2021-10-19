@@ -5,3 +5,5 @@
 //}
 
 （書く）
+
+//printendnotes
