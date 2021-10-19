@@ -1,5 +1,6 @@
 PREDEF:
   - preface.re
+  - preface3.re
   - preface4.re
 
 CHAPS:
@@ -16,10 +17,13 @@ CHAPS:
   - 『現代焚書』第２号からの再録:
     - c92-emoi.re
     - c92-mohican.re
+  - 『現代焚書』第４号からの再録:
+    - 2_hataraku.re
 
 APPENDIX:
 
 POSTDEF:
   - postscript.re
+  - postscript3.re
   - postscript4.re
   - bib.re
