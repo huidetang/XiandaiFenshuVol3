@@ -140,52 +140,6 @@
   }
 \fi
 
-% 索引
-\newif\ifjlreq@resttate
-\renewenvironment{theindex}{%
-  \jlreq@oldfontcommand@enable
-  \jlreq@iftdir{\clearpage\yoko\jlreq@resttatetrue}{\jlreq@resttatefalse}% 常に横書きにする
-  \if@twocolumn\@resttwocoltrue\else\@resttwocolfalse\fi
-  \columnseprule\z@ \columnsep 2\jlreq@mol
-  \onecolumn[\section*{\indexname}]%
-  \@mkboth{\indexname}{\indexname}%
-  \jlreq@theindex@pagestyle
-  \parindent\z@
-  \parskip\z@ \@plus .03\jlreq@gol\relax
-  \let\item\@idxitem
-}{%
-  \ifx\jlreq@theindex@savedpagestyle\@undefined\else\expandafter\pagestyle\expandafter{\jlreq@theindex@savedpagestyle}\fi
-  \let\jlreq@theindex@savedpagestyle\@undefined
-  \if@resttwocol\twocolumn\else\clearpage\fi
-  \ifjlreq@resttate\tate\fi
-  \jlreq@oldfontcommand@disable
-}
-\renewcommand{\@idxitem}{\par\hangindent 4\jlreq@mol}
-\renewcommand{\subitem}{\@idxitem \hspace*{2\jlreq@mol}}
-\renewcommand{\subsubitem}{\@idxitem \hspace*{3\jlreq@mol}}
-\renewcommand{\indexspace}{\par \vskip 1\jlreq@gol \@plus .5\jlreq@gol \@minus .3\jlreq@gol\relax}
-% \def\jlreq@theindex@pagestyle{}
-% \keys_define:nn { jlreqsetup } {
-%   theindex_pagestyle .code:n = {
-%     \def\jlreq@tempa{}% ページスタイル名
-%     \def\jlreq@theindex@pagestyle{}%
-%     \jlreq@tempafalse % restore
-%     \jlreq@parsekeyval@nokey{%
-%       \ifjlreq@parsekeyval@nokey@novalue{\def\jlreq@tempa{##1}}{%
-%         \str_if_eq:nnT {##1} { restore } {
-%           {restore}{\csname jlreq@tempa##2\endcsname}%
-%         }%
-%       }%
-%     }{#1}%
-%     \tl_put_right:Nx \jlreq@theindex@pagestyle {
-%       \exp_not:n {\let\jlreq@theindex@savedpagestyle}\ifjlreq@tempa\exp_not:N \jlreq@current@pagestyle\else\exp_not:N \@undefined\fi
-%     }%
-%     \ifx\jlreq@tempa\@empty\else
-%       \tl_put_right:Nx \jlreq@theindex@pagestyle{\exp_not:N \pagestyle{\exp_not:o \jlreq@tempa}}%
-%     \fi
-%   }
-% }
-
 % 奥付
 \ifdefined\review@colophon
   \ifthenelse{\isundefined{\review@colophonfile}}{%
