@@ -176,7 +176,7 @@
   @<href>{https://www.biodic.go.jp/biodiversity/about/about.html}
 //}
 //bibpaper[genome][サラブレッドのゲノムワイド解析]{
-  Jeffrey A. Fawcett, Fumio Sato, Takahiro Sakamoto, Watal M. Iwasaki, Teruaki Tozaki, Hideki Innan "Genome-wide SNP analysis of Japanese Thoroughbred racehorses" (PLOS ONE 14: e0218407, 2019)
+  Jeffrey A. Fawcett, Fumio Sato, Takahiro Sakamoto, Watal M. Iwasaki, Teruaki Tozaki, Hideki Innan "Genome-wide SNP analysis of Japanese Thoroughbred racehorses" (PLOS ONE 14: e0218407, 2019)@<br>{}
   @<href>{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0218407}
 //}
 //bibpaper[subeteno][すべての馬に乗れ]{
@@ -192,12 +192,12 @@
   東京・ぶんか社　１９９６年
 //}
 //bibpaper[kamitsuita][運命に噛みついた馬]{
-  レイ・ボーリック著、大関夏子訳『運命に噛みついた馬　サンデーサイレンス物語』
+  レイ・ボーリック著、大関夏子訳『運命に噛みついた馬　サンデーサイレンス物語』@<br>{}
   東京・産経新聞ニュースサービス　２００２年
 //}
 //bibpaper[kiyotaku][清田区の略年譜]{
-  札幌市清田区のホームページ「きよたの歴史 > 略年譜」
-  @<href>{https://www.city.sapporo.jp/kiyota/outline/history/index2.html}
+  札幌市清田区のホームページ「きよたの歴史 > 略年譜」@<br>{}
+  @<href>{https://www.city.sapporo.jp/kiyota/outline/history/index2.html}@<br>{}
 //}
 //embed[latex]{
 \end{thebibliography}
