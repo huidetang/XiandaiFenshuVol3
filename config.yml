@@ -320,7 +320,7 @@ epubmaker:
   #
   # 変換したHTMLファイルおよびCSSを解析して厳密に使用している画像ファイルだけを取り込むか。デフォルトはnull(imagesディレクトリすべてを取り込む)
   # なお、フォント、カバー、広告についてはこの設定によらずディレクトリ内のものがすべて取り込まれる
-  # verify_target_images: null
+  verify_target_images: true
   #
   # verify_target_imagesがtrueの状態において、解析で発見されなくても強制的に取り込むファイルの相対パスの配列
   # force_include_images: []
@@ -341,15 +341,15 @@ epubmaker:
   # zip_addpath: null
   #
   # EPUBで表紙をコンテンツに含めるか。デフォルトでは作成されない。yesにするとiBooks等でも最初に表紙が表示されるようになる
-  # cover_linear: null
+  cover_linear: yes
   #
   # @<href>タグでの外部リンクを禁止し、地の文にする(falseで禁止する)
-  externallink: true
+  externallink: false
   #
   # 脚注に「戻る」リンクを追加する(trueで追加)。脚注の記号および戻るリンクの記号はlocale.ymlで変更可能
-  # back_footnote: null
+  back_footnote: true
   # 見出しに応じて<section>で囲むようにする(trueで<section>を利用)
-  # use_section: null
+  use_section: true
   # epubmaker:階層を使うものはここまで
 
 # LaTeX用のスタイルファイル(styディレクトリ以下に置くこと)
