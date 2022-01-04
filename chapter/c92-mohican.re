@@ -20,14 +20,14 @@
 また、とある技術系コミュニティの勉強会@<endnote>{dogenzakaLT}において、
 「マサカリはここに置いてきてください」という掲示と共に、マサカリが置かれていた、ということもあったそうです。
 
-//endnote[dogenzakaLT][詳しくはねとらぼの該当記事（@<href>{http://nlab.itmedia.co.jp/nl/articles/1501/15/news170.html}、２０１５年１月@<tcy>{15}日付け）参照。]
+//endnote[dogenzakaLT][詳しくはねとらぼの該当記事（@<href>{https://nlab.itmedia.co.jp/nl/articles/1501/15/news170.html}、２０１５年１月@<tcy>{15}日付け）参照。]
 
 == 「マサカリ」の語源と「モヒカン族」
 
 この「マサカリ」ですが、一説では「モヒカン族」の武器として
 たとえられていたのが起源@<endnote>{masakari_roots}とされています。
 
-//endnote[masakari_roots][詳しくはkaityo256氏の、Qiitaの『マサカリの起源について』（@<href>{http://qiita.com/kaityo256/items/d7d8f7a0e522895c8f5d}）参照。]
+//endnote[masakari_roots][詳しくはkaityo256氏の、Qiitaの『マサカリの起源について』（@<href>{https://qiita.com/kaityo256/items/d7d8f7a0e522895c8f5d}）参照。]
 
 ただ、実際にはTAKANO Mitsuhiro氏のツイート@<endnote>{masakari_tweet}によると、Perlコミュニティなどで使われていたようです。
 もしかすると野球のマサカリ投法から連想されたのかもしれません。
@@ -81,7 +81,7 @@
  : 差異
   お互いの違いを確認することで、我々はつながります。「自分らにとって良いから他の人にも良いはずだ」とは思いません。
 
-※ 原文：はてなキーワード「モヒカン族」のページ @<href>{http://d.hatena.ne.jp/keyword/%a5%e2%a5%d2%a5%ab%a5%f3%c2%b2?kid=119725#mohicandeclaration}より
+※ 原文：はてなキーワード「モヒカン族」のページ @<href>{https://d.hatena.ne.jp/keyword/%a5%e2%a5%d2%a5%ab%a5%f3%c2%b2?kid=119725#mohicandeclaration}より
 //}
 
 私が思うには、「モヒカン族」の考え方は共通の文化的コンテクストを持たない、
@@ -117,7 +117,7 @@
  : 差異
    お互いの差異は努力で埋めることが出来ます。自分が良いと思ったことを積極的に人に対して行いましょう。
 
-※ 原文：はてなキーワード「モヒカン族」のページ @<href>{http://d.hatena.ne.jp/keyword/%a5%e2%a5%d2%a5%ab%a5%f3%c2%b2?kid=119725#villagedeclaration}より
+※ 原文：はてなキーワード「モヒカン族」のページ @<href>{https://d.hatena.ne.jp/keyword/%a5%e2%a5%d2%a5%ab%a5%f3%c2%b2?kid=119725#villagedeclaration}より
 //}
 
 と、見てみると、これは、共通の文化を持たない人たちには理解しがたい内容だとおもいます。
@@ -165,7 +165,7 @@
 ということに気づきました。
 
 「ダイバーシティの本質はそういうことじゃないんじゃないかな」
-@<href>{http://simplearchitect.hatenablog.com/entry/2016/04/25/081532} より
+@<href>{https://simplearchitect.hatenablog.com/entry/2016/04/25/081532} より
 //}
 
 この発言では、牛尾氏自身がＡＤＨＤということをこの記事でカミングアウトしています。
@@ -229,7 +229,7 @@
   * 大衆と内輪に埋没してるのはマサカリのせいでない、てめぇが「何が良いものか」 の判断を他人に委ねてるからだ。
   * 礼儀をもって、正しく意見を交換しよう。それがコミュニティだ。
 
-※ 「技術モヒカンに中指を立てる」@<href>{http://blog.hirokiky.org/2013/07/17/things_you_should_learn_from_geeks.html}より
+※ 「技術モヒカンに中指を立てる」@<href>{https://blog.hirokiky.org/2013/07/17/things_you_should_learn_from_geeks.html} （現在リンク切れ）より
 //}
 
 私は、これもその通りだと思います。

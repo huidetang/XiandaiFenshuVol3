@@ -12,11 +12,11 @@
 //}
 //bibpaper[madokaism_pixiv][ピクシブ百科事典の「まどか教」の記事]{
   ピクシブ百科事典の「まどか教」の記事。@<br>{}
-  http://dic.pixiv.net/a/%E3%81%BE%E3%81%A9%E3%81%8B%E6%95%99#h2_0
+  @<href>{https://dic.pixiv.net/a/%E3%81%BE%E3%81%A9%E3%81%8B%E6%95%99#h2_0}
 //}
 //bibpaper[madokaism_niconico][ニコニコ大百科の「まどか教」の記事]{
   ニコニコ大百科の「まどか教」の記事。@<br>{}
-  http://dic.nicovideo.jp/a/%E3%81%BE%E3%81%A9%E3%81%8B%E6%95%99
+  @<href>{https://dic.nicovideo.jp/a/%E3%81%BE%E3%81%A9%E3%81%8B%E6%95%99}
 //}
 //bibpaper[shoshinge][正信念仏偈]{
   親鸞『教行信証』より「正信念仏偈」
@@ -80,7 +80,7 @@
 //}
 //bibpaper[morugessoyo][朝日新聞社の金知鉉氏へのインタビュー]{
   朝日新聞デジタル「平昌五輪の謎彫刻、狙いは何か　モルゲッソヨの作者語る」２０１８年２月@<tcy>{26}日@<tcy>{19}時@<tcy>{30}分発表@<br>{}
-  https://www.asahi.com/articles/ASL2V5HSKL2VUEHF00D.html @<br>{}
+  @<href>{https://www.asahi.com/articles/ASL2V5HSKL2VUEHF00D.html}@<br>{}
   （記者：藤田太郎氏）
 //}
 //bibpaper[hokekyo][法華経]{
@@ -88,15 +88,15 @@
 //}
 //bibpaper[clone_catholic][クローン人間の研究に関する日本カトリック教会の見解]{
   日本カトリック司教協議会 常任司教委員会『クローン人間の研究に関する日本のカトリック教会の見解』１９９７年５月３日@<br>{}
-  https://www.cbcj.catholic.jp/1997/05/03/5109/
+  @<href>{https://www.cbcj.catholic.jp/1997/05/03/5109/}
 //}
 //bibpaper[clone_jodoshu][クローン人間誕生に対する浄土宗の声明]{
   浄土宗「クローン人間誕生に対する浄土宗の声明」平成@<tcy>{14}年@<tcy>{12}月@<tcy>{31}日@<br>{}
-  原文は http://archive.fo/kjLGN#selection-423.0-423.184 にアーカイブされたものによる
+  原文は @<href>{https://archive.fo/kjLGN#selection-423.0-423.184} にアーカイブされたものによる
 //}
 //bibpaper[clone_tendaishu][クローン人間創出にかかわる天台宗の反対決議文]{
   天台宗宗議会「クローン人間創出にかかわる反対決議文」平成@<tcy>{14}年３月８日@<br>{}
-  http://www.tendai.or.jp/shuchou/04.php
+  @<href>{https://www.tendai.or.jp/shuchou/04.php}
 //}
 //bibpaper[shushi][ラシード・ウッディーン『モンゴル史』]{
   ラシード＝アッディーン：著、堀さと：訳『モンゴル史』部族編第二章 日本語訳、２０１３年、群雄堂書店
@@ -104,7 +104,7 @@
 //bibpaper[zahra][ザーラ殿下のアジア競馬会議基調講演]{
   Howard Wright「ザラ・アガ・カーン王女、生産者に忍耐を呼び掛ける」@<br>{}
   翻訳は公益財団法人ジャパン・スタッドブック・インターナショナルの下記記事による。@<br>{}
-  http://www.jairs.jp/contents/w_news/2016/2/3.html
+  @<href>{https://www.jairs.jp/contents/w_news/2016/2/3.html}
 //}
 //bibpaper[gencho_hishi][元朝秘史]{
   村上正二：訳『モンゴル秘史　チンギス・カン物語』３巻 平凡社、１９７６年
@@ -114,7 +114,7 @@
 //}
 //bibpaper[jidou_gyakutai][Rootport氏の記事]{
   Rootport「児童虐待はヒトの本能なのか？」２０１８年６月@<tcy>{17}日発表@<br>{}
-  http://rootport.hateblo.jp/entry/2018/06/17/215021
+  @<href>{http://rootport.hateblo.jp/entry/2018/06/17/215021}
 //}
 //bibpaper[lenten_triodion][三歌斎経]{
   聖ニコライ・中井木菟麻呂訳『三歌斎経』
@@ -130,7 +130,7 @@
 //}
 //bibpaper[Auyeung_key][歐陽宇亮氏の体験にかかる既述]{
   歐陽宇亮「香港ガリ勉眼鏡っ娘ゲーマー第@<tcy>{11}回！“葉鍵”女子が「俺」になるとき」２０１７年４月@<tcy>{10}日発表@<br>{}
-  http://jp.ign.com/hkgirlgamer/12612/feature/11
+  @<href>{http://jp.ign.com/hkgirlgamer/12612/feature/11}
 //}
 //bibpaper[himote][非モテの品格]{
   杉田俊介『非モテの品格』集英社、２０１６年
@@ -143,15 +143,15 @@
 //}
 //bibpaper[statement-by-the-white-house][相模原障がい者連続殺傷事件に対するホワイトハウスの声明]{
   Statement by NSC Spokesperson Ned Price on the Knife Attack in Japan@<br>{}
-  https://bit.ly/2adaFRP
+  @<href>{https://obamawhitehouse.archives.gov/the-press-office/2016/07/25/statement-nsc-spokesperson-ned-price-knife-attack-japan}
 //}
 //bibpaper[tokurei-kogaisha][特例子会社制度の概要]{
   厚生労働省のドキュメント『「特例子会社」制度の概要』@<br>{}
-  https://www.mhlw.go.jp/bunya/koyou/shougaisha/dl/07.pdf
+  @<href>{https://www.mhlw.go.jp/bunya/koyou/shougaisha/dl/07.pdf}
 //}
 //bibpaper[soushokukei-insei][草食性院生のブログ]{
   windupbird氏のブログ「草食系院生ブログ」@<br>{}
-  http://dameinsei.hatenadiary.jp/
+  @<href>{https://dameinsei.hatenadiary.jp/}
 //}
 //bibpaper[sagamihara][相模原障害者殺傷事件]{
   立岩真也、杉田俊介・著『相模原障害者殺傷事件 優生思想とヘイトクライム』東京・青土社、2017年
@@ -173,11 +173,11 @@
 //}
 //bibpaper[biodiversity][環境省ＨＰ（生物多様性）]{
   環境省「みんなで学び、みんなで守る生物多様性」@<br>{}
-  https://www.biodic.go.jp/biodiversity/about/about.html
+  @<href>{https://www.biodic.go.jp/biodiversity/about/about.html}
 //}
 //bibpaper[genome][サラブレッドのゲノムワイド解析]{
   Jeffrey A. Fawcett, Fumio Sato, Takahiro Sakamoto, Watal M. Iwasaki, Teruaki Tozaki, Hideki Innan "Genome-wide SNP analysis of Japanese Thoroughbred racehorses" (PLOS ONE 14: e0218407, 2019)
-  https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0218407
+  @<href>{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0218407}
 //}
 //bibpaper[subeteno][すべての馬に乗れ]{
   よしだみほ『競馬連戦連笑７　すべての馬に乗れ』@<br>{}
@@ -197,7 +197,7 @@
 //}
 //bibpaper[kiyotaku][清田区の略年譜]{
   札幌市清田区のホームページ「きよたの歴史 > 略年譜」
-  https://www.city.sapporo.jp/kiyota/outline/history/index2.html
+  @<href>{https://www.city.sapporo.jp/kiyota/outline/history/index2.html}
 //}
 //embed[latex]{
 \end{thebibliography}

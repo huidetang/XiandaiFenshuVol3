@@ -56,7 +56,7 @@
 
 ところで、映画化の3作品目である『魔法少女まどか☆マギカ　叛逆の物語』において、ある意味「神に背く」存在となったほむらですが、彼女の救済に関しては様々な意見があると言えます。
 
-//graph[homura1][plantuml][悪魔ほむら分類図]{
+//image[homura1][悪魔ほむら分類図]{
 @startmindmap
 skinparam monochrome true
 skinparam defaultFontName "Noto Sans CJK JP"
@@ -102,7 +102,7 @@ skinparam defaultFontName "Noto Sans CJK JP"
 
 ピクシブ百科事典の「まどか教」の記事 @<endnote>{madoka1} においては、以下のようにまとめられています。
 
-//endnote[madoka1][@<href>{http://dic.pixiv.net/a/%E3%81%BE%E3%81%A9%E3%81%8B%E6%95%99#h2_0} より。]
+//endnote[madoka1][@<href>{https://dic.pixiv.net/a/%E3%81%BE%E3%81%A9%E3%81%8B%E6%95%99#h2_0} より。]
 
 //quote{
 最終回にて遂にキュゥべえと契約し、その時願った全時空を越えて魔法少女達を絶望から救うという願いによって、宇宙の法則をも変え、その引き換えに大いなる呪いを背負った御身体もろとも魔女を永遠に消し去ることで、現世を離れ魔法少女達を救済する「神」に等しき存在になった女神まどか様。
@@ -116,7 +116,7 @@ skinparam defaultFontName "Noto Sans CJK JP"
 
 また、ニコニコ大百科の「まどか教」の記事 @<endnote>{madoka2} には以下の通り書かれています。
 
-//endnote[madoka2][@<href>{http://dic.nicovideo.jp/a/%E3%81%BE%E3%81%A9%E3%81%8B%E6%95%99} より。]
+//endnote[madoka2][@<href>{https://dic.nicovideo.jp/a/%E3%81%BE%E3%81%A9%E3%81%8B%E6%95%99} より。]
 
 //quote{
 ……女神まどかの奇跡を信じるまどか教徒たちにとって「THE世界遺産」のCMは異なる意味を持った。
