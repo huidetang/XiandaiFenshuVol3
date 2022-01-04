@@ -1,7 +1,10 @@
 PREDEF:
   - preface.re
+  - preface1.re
+  - prefacem.re
   - preface3.re
   - preface4.re
+  - preface5.re
 
 CHAPS:
   - 「コンテンツから見る『人間』とは何か」:
@@ -19,11 +22,18 @@ CHAPS:
     - c92-mohican.re
   - 『現代焚書』第４号からの再録:
     - 2_hataraku.re
+  - 『現代焚書』第５号からの再録:
+    - history.re
+    - sunday.re
+    - hamatta.re
 
 APPENDIX:
 
 POSTDEF:
   - postscript.re
+  - postscript1.re
+  - postscriptm.re
   - postscript3.re
   - postscript4.re
+  - postscript5.re
   - bib.re
