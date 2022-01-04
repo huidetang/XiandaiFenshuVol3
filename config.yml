@@ -427,9 +427,8 @@ pdfmaker:
   # 索引作成コマンドのオプション
   # makeindex_options: "-f -r -I utf8"
   # 索引作成コマンドのスタイルファイル
-  # makeindex_sty: null
+  makeindex_sty: index.ist
   # 索引作成コマンドの辞書ファイル
-  # makeindex_dic: null
   makeindex_dic: sakuin.dic
   # MeCabによる索引読み探索を使うか
   makeindex_mecab: true
