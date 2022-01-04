@@ -320,7 +320,7 @@ epubmaker:
   #
   # 変換したHTMLファイルおよびCSSを解析して厳密に使用している画像ファイルだけを取り込むか。デフォルトはnull(imagesディレクトリすべてを取り込む)
   # なお、フォント、カバー、広告についてはこの設定によらずディレクトリ内のものがすべて取り込まれる
-  verify_target_images: true
+  # verify_target_images: true
   #
   # verify_target_imagesがtrueの状態において、解析で発見されなくても強制的に取り込むファイルの相対パスの配列
   # force_include_images: []
