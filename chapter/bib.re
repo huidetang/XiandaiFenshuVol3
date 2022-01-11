@@ -143,7 +143,7 @@
 //}
 //bibpaper[statement-by-the-white-house][相模原障がい者連続殺傷事件に対するホワイトハウスの声明]{
   Statement by NSC Spokesperson Ned Price on the Knife Attack in Japan@<br>{}
-  @<href>{https://obamawhitehouse.archives.gov/the-press-office/2016/07/25/statement-nsc-spokesperson-ned-price-knife-attack-japan}
+  @<href>{https://bit.ly/3fhL2lY} ※ 短縮URL
 //}
 //bibpaper[tokurei-kogaisha][特例子会社制度の概要]{
   厚生労働省のドキュメント『「特例子会社」制度の概要』@<br>{}
