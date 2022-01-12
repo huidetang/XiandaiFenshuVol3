@@ -385,6 +385,7 @@ dvioptions: "-d 5 -z 9 -r 600"
 pdfmaker:
   #
   cover: cover.tex
+  backcover: backcover.tex
   # TeX版で利用する表紙画像。
   # 仕上がりサイズ+塗り足し3mmありのPDFまたはIllustratorファイル（PDF互換オプション付き）を推奨。
   # 拡縮はされず「そのまま」貼り付けられる
