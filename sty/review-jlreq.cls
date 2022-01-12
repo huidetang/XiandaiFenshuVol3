@@ -226,12 +226,29 @@
 \edef\grnchry@gutter{\evensidemargin}
 \newcommand*\includefullpagegraphics{%
   \clearpage
-  \@ifstar
+  \ltx@ifstar
     {\@includefullpagegraphics}%
     {\thispagestyle{empty}\@includefullpagegraphics}
 }
 
 \newcommand*\@includefullpagegraphics[2][]{%
+  \if@tate
+    \vbox to \textheight{%
+      \ifodd\c@page
+        \vskip-\dimexpr\evensidemargin - \topskip + 1in\relax
+      \else
+        \vskip-\dimexpr\oddsidemargin - \topskip + 1in\relax
+      \fi
+      \vbox to \paperwidth{\vss
+        \hbox to \textwidth{%
+          \hskip-\grnchry@head\relax
+          \hbox to \paperheight{\hss
+            \rotatebox{90}{\includegraphics[#1]{#2}}%
+          \hss}%
+        \hss}%
+      \vss}%
+    \vss}%
+  \else
     \vbox to \textheight{%
       \vskip-\grnchry@head
       \vbox to \paperheight{\vss
@@ -247,6 +264,7 @@
         \hss}%
       \vss}%
     \vss}%
+  \fi
   \clearpage
 }
 
