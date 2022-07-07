@@ -1,13 +1,3 @@
-GIT
-  remote: https://github.com/kmuto/review.git
-  revision: ae044c966227f37883c2ab21156b7bd33a1669f5
-  specs:
-    review (5.3.0)
-      image_size
-      rouge
-      rubyzip
-      tty-logger
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -25,6 +15,11 @@ GEM
     psych (3.3.2)
     racc (1.6.0)
     rake (13.0.6)
+    review (5.3.0)
+      image_size
+      rouge
+      rubyzip
+      tty-logger
     rexml (3.2.5)
     rouge (3.27.0)
     rubyzip (2.3.2)
@@ -41,9 +36,9 @@ DEPENDENCIES
   nokogiri
   psych (< 4.0.0)
   rake
-  review!
+  review (< 5.4.0)
   rexml
   rubyzip
 
 BUNDLED WITH
-   2.1.4
+   2.3.7
