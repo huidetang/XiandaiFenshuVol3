@@ -6,7 +6,11 @@
 
 % 後注の出力場所に関する設定
 % Re:VIEW 5.3が来たら取り除く
-\jlreqsetup{endnote_position={_chapter}}
+% \jlreqsetup{endnote_position={_chapter}}
+
+% for user-defined macro
+% 縦横比を変えたくない（ずれた部分は白くなる）場合は以下を利用
+\def\review@coverimageoption{width=\paperwidth,height=\paperheight,keepaspectratio}%
 
 % 数字を使う箇条書きのみ数字と本文の間を1文字開ける
 \jlreqsetup{itemization_labelsep={enumerate=1zw}}
